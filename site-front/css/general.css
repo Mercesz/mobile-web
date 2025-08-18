@@ -1,12 +1,37 @@
-*{
-    padding:0;
+* {
+    padding: 0;
     margin: 0;
 }
 
-body{
-    background: rgb(208, 208, 255);
+body {
+    background: #efe0e8;
 }
 
-.container{
-    background: white;
+.container {
+    background: #AC7D88;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+/*  Criando o Header */
+header {
+    background: #AC7D88;
+    /* Altura */
+    height: 130px;
+    border-bottom: 2px solid black;
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+}
+
+
+header img {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+header h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
 }
