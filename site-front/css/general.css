@@ -64,7 +64,7 @@ header h2 {
 }
 
 /* Banner    */
-.banner{
+.banner {
     max-width: 1000px;
     height: 250px;
     border: 2px solid blue;
@@ -72,4 +72,15 @@ header h2 {
     margin: 20px;
     /* Cortar imagem */
     overflow: hidden;
+}
+
+/* Content HOME */
+.content-box {
+    margin: 20px;
+    border: 1px solid blue;
+}
+
+.box {
+    border: 1px solid blue;
+    max-width: 300px;
 }
