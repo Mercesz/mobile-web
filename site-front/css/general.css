@@ -121,7 +121,7 @@ header h2 {
     text-decoration: underline;
 }
 
-.promocao{
+.promocao {
     /* Flexbox */
     display: flex;
     justify-content: center;
@@ -135,4 +135,51 @@ header h2 {
     margin: 20px;
     /* Cortar imagem */
     overflow: hidden;
+}
+
+/* Novidades */
+.novidades {
+    background-color: lightgrey;
+    margin-top: 20px;
+    /* Flexbox */
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.novidades span {
+    font-size: 80px;
+}
+
+.novidades article {
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.novidades form {
+    width: 100%;
+}
+
+.novidades form input {
+    padding-left: 10px;
+    max-width: 300px;
+    width: 100%;
+    height: 35px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid grey;
+    background-color: rgb(191, 191, 255);
+}
+
+.novidades form button {
+    border: 1px solid rgb(191, 191, 255);
+    background: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 10px;
+    color: black;
+    font-weight: bold;
 }
