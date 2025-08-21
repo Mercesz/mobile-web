@@ -175,11 +175,25 @@ header h2 {
 }
 
 .novidades form button {
-    border: 1px solid rgb(191, 191, 255);
-    background: transparent;
+    border: 1px solid rgb(125, 125, 252);
+    background-color: rgb(191, 191, 255);
     cursor: pointer;
     border-radius: 10px;
     padding: 10px;
     color: black;
+    font-weight: bold;
+}
+
+footer {
+    background: #000 ;
+    height: 40px;
+    /* FlexBox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: grey;
     font-weight: bold;
 }
