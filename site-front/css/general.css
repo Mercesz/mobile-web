@@ -74,6 +74,7 @@ header h2 {
     height: 250px;
     border: 2px solid rgb(191, 191, 255);
     border-radius: 10px;
+    box-shadow: 2px 2px 2px #bcbaba;
     margin: 20px;
     /* Cortar imagem */
     overflow: hidden;
@@ -131,6 +132,7 @@ header h2 {
     max-width: 800px;
     height: 180px;
     border: 2px solid rgb(191, 191, 255);
+    box-shadow: 2px 2px 2px #bcbaba;
     border-radius: 10px;
     margin: 20px;
     /* Cortar imagem */
@@ -144,7 +146,7 @@ header h2 {
     /* Flexbox */
     display: flex;
     justify-content: space-around;
-
+    
 }
 
 .novidades span {
@@ -171,10 +173,12 @@ header h2 {
     border-radius: 5px;
     outline: none;
     border: 1px solid grey;
+    box-shadow: 2px 2px 2px #bcbaba;
     background-color: rgb(191, 191, 255);
 }
 
 .novidades form button {
+    box-shadow: 2px 2px 2px #bcbaba;
     border: 1px solid rgb(125, 125, 252);
     background-color: rgb(191, 191, 255);
     cursor: pointer;
@@ -196,4 +200,9 @@ footer {
 footer p {
     color: grey;
     font-weight: bold;
+}
+
+/* Página Sobre */
+.spaceSobre {
+    margin: 20px 0 20px 0;
 }
