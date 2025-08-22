@@ -220,3 +220,21 @@ footer p {
     box-shadow:4px 4px 4px 4px grey;
    
 }
+
+.containerLista {
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.containerLista details {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.containerLista article {
+    margin-top: 8px;
+    color: green;
+}
