@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    list-style: none;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -49,6 +48,7 @@ header h2 {
     justify-content: space-around;
     align-items: center;
     background-color: #1bb76ed0;
+    list-style: none;
 }
 
 .menu li {
@@ -146,7 +146,7 @@ header h2 {
     /* Flexbox */
     display: flex;
     justify-content: space-around;
-    
+
 }
 
 .novidades span {
@@ -185,11 +185,10 @@ header h2 {
     border-radius: 10px;
     padding: 10px;
     color: black;
-    font-weight: bold;
 }
 
 footer {
-    background: #000 ;
+    background: #1bb76ed0;
     height: 40px;
     /* FlexBox */
     display: flex;
@@ -198,11 +197,26 @@ footer {
 }
 
 footer p {
-    color: grey;
-    font-weight: bold;
+    color: white;
 }
 
 /* Página Sobre */
 .spaceSobre {
-    margin: 20px 0 20px 0;
+    margin: 20px 0 0 0;
+    align-items: center;
+}
+
+.caixas{
+    display: flex;
+    margin: 20px 20px 0 20px;
+    border: 2px solid rgba(255, 0, 0, 0.545);
+}
+
+.box-texto {
+    margin: 20px;
+    font-size: 14px;
+    padding:10px;
+    border-radius: 15px;
+    box-shadow:4px 4px 4px 4px grey;
+   
 }
