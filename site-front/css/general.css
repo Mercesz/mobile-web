@@ -238,3 +238,38 @@ footer p {
     margin-top: 8px;
     color: green;
 }
+
+.Locais {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.local {
+    border: 1px solid rgb(191, 191, 255);
+    max-width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 0 0 0 10px; 
+}
+
+/* .content-box {
+    margin: 20px;
+
+    /* Flexbox */
+    /* display: flex;
+}
+
+.box {
+    border: 2px solid rgb(191, 191, 255);
+    max-width: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 10px 35px 20px 20px;
+    /* Sombra */
+    /* box-shadow: 2px 2px 2px #bcbaba;
+}
+
+.box img {
+    border-bottom: 2px solid #4681d6;
+} */ 
