@@ -141,7 +141,7 @@ header h2 {
 
 /* Novidades */
 .novidades {
-    background-color: lightgrey;
+    background-color: #1bb76ed0;
     margin-top: 20px;
     /* Flexbox */
     display: flex;
@@ -188,7 +188,7 @@ header h2 {
 }
 
 footer {
-    background: #1bb76ed0;
+    background: #099759;
     height: 40px;
     /* FlexBox */
     display: flex;
@@ -200,25 +200,24 @@ footer p {
     color: white;
 }
 
-/* Página Sobre */
-.spaceSobre {
+/* Página Sobre e Página Contato */
+.spaceSobre, .spaceContato {
     margin: 20px 0 0 0;
     align-items: center;
 }
 
-.caixas{
+.caixas {
     display: flex;
     margin: 20px 20px 0 20px;
-    border: 2px solid rgba(255, 0, 0, 0.545);
 }
 
 .box-texto {
     margin: 20px;
     font-size: 14px;
-    padding:10px;
+    padding: 10px;
     border-radius: 15px;
-    box-shadow:4px 4px 4px 4px grey;
-   
+    box-shadow: 4px 4px 4px 4px grey;
+
 }
 
 .containerLista {
@@ -250,27 +249,17 @@ footer p {
     max-width: 400px;
     border-radius: 10px;
     overflow: hidden;
-    margin: 0 0 0 10px; 
-    height: 130px;
+    margin: 0 0 0 10px;
+    height: 200px;
 }
 
-/* .content-box {
-    margin: 20px;
-
-    /* Flexbox */
-    /* display: flex;
+/* Página Contato */
+.text-contato {
+    margin: 0 0 20px 20px;
+    font-size: 42px;
 }
 
-.box {
-    border: 2px solid rgb(191, 191, 255);
-    max-width: 300px;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 10px 35px 20px 20px;
-    /* Sombra */
-    /* box-shadow: 2px 2px 2px #bcbaba;
+.text-contato strong {
+    color: rgb(221, 64, 64);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
-.box img {
-    border-bottom: 2px solid #4681d6;
-} */ 
