@@ -68,6 +68,41 @@
                 </select>
             </article>
 
+
+            <article>
+                <fieldset>
+                    <legend class="title">Receber email</legend>
+                    <section class="form-group-info">
+                        <label for="sim">Sim</label>
+                        <input type="checkbox" id="sim" />
+                    </section>
+                </fieldset>
+            </article>
+
+            <article class="form-group-info">
+                <label for="idade" class="title">Idade</label>
+                <input type="number" id="idade" min="0" max="120" class="form-control-padrao" />
+            </article>
+
+            <article class="form-group-info">
+                <label for="nivel" class="title">Nível de satisfação</label>
+                <input type="range" id="nivel" min="0" max="10" />
+            </article>
+
+            <article class="form-group-info">
+                <label for="doc" class="title">Importar arquivo</label>
+                <input type="file" id="doc">
+            </article>
+
+            <article class="form-group-info">
+                <label for="descricao" class="title">Descrição</label>
+                <textarea id="descricao" class="comentario"></textarea>
+            </article>
+
+            <article>
+                <button type="submit" class="btn-enviar">Enviar informações</button>
+            </article>
+
         </form>
 
     </main>
