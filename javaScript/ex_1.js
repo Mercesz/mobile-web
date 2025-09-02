@@ -11,5 +11,3 @@ console.log(letras)
 let linguagem = "JavaScript"
 let soletrando = linguagem[0] + linguagem[4]
 console.log(soletrando)
-
-
