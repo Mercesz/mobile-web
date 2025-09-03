@@ -8,6 +8,7 @@ let sub = num1 - num2
 let mult = num1 * num2
 let div = num1 / num2
 
+
 //Funções
 function somar() {
     console.log(soma)
