@@ -1,0 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgba(114, 114, 247, 0.786);
+}
+
+.container {
+    /*Largura*/
+    width: 100%;
+    max-width: 450px;
+    /*Borda*/
+    border: 3px solid white;
+    /* Borda arrendondada */
+    border-radius: 5px;
+    /* Centralizar minha tela*/
+    margin: 40px auto;
+}
+
+.container form {
+    /*Flexbox*/
+    background-color: rgb(112, 160, 227);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    box-shadow: 4px 4px 15px white;
+}
+
+h1{
+    /* Espaçamento entre os elementos */
+    margin-top: 15px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+label {
+    /* Espaçamento entre os elementos */
+    margin-top: 15px;
+    color: #fff;
+    display: block;
+    font-weight: bold;
+}
+
+input {
+    /*Espaçamento entre os elementos*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    /*Efeito colateral do navegador*/
+    outline: none;
+    /*Espaçamento dentro do elemento*/
+    padding: 5px;
+    width: 100px;
+}
+
+button {
+    color: white;
+    background-color: rgba(68, 68, 200, 0.405);
+    padding: 5px;
+    border: 2px solid rgba(74, 74, 177, 0.431);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#result {
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-shadow: 10px 5px 20px blue;
+}
