@@ -9,15 +9,23 @@ body {
     display: flex;
 }
 
+
 .container {
-   margin: 55px auto;
+    color: rgba(255, 255, 255, 0.867);
+    margin: 55px auto;
     padding-top: 200px;
     padding-left: 20px;
     width: 600px;
     height: 400px;
     font-size: 14px;
     border: 2px solid white;
-    background: #ab2993;
-    background: linear-gradient(90deg, rgba(171, 41, 147, 1) 6%, rgba(199, 87, 199, 1) 31%, rgba(237, 83, 219, 1) 63%);
+    background: #ff57e0;
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
     border-radius: 15px;
+}
+
+span {
+    text-decoration: underline;
+    color: rgb(72, 72, 218);
+    font-size: 45px;
 }

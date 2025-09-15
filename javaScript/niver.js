@@ -1,3 +1,5 @@
+
+
 function diasParaNiver() {
     const hoje = new Date();
     const diaSemana = hoje.getDay();//0=Dom, 1=Seg, ...,4=Quin
@@ -11,5 +13,22 @@ function diasParaNiver() {
 
 }
 
-//Chamando a função
+function atualizarHora() {
+    const horaHTML = document.getElementById("hora")
+    const agora = new Date()
+    const hora = agora.getHours()
+    const minutos = agora.getMinutes()
+    const segundos = agora.getSeconds()
+
+    horaHTML.textContent = `${hora}:${minutos}:${segundos}`
+}
+
+
+//Chamando as funções
 diasParaNiver()
+
+
+setInterval(atualizarHora, 1000)
+
+atualizarHora()
+
