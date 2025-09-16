@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
 }
 
-.titleGeneral h1 {
+.titleGeneral + #parceiros + #equipe + h1 {
     padding-left: 25px;
     color: #4681d6;
 }
@@ -210,6 +210,7 @@ footer p {
 .caixas {
     display: flex;
     margin: 20px 20px 0 20px;
+
 }
 
 .box-texto {
@@ -218,7 +219,8 @@ footer p {
     padding: 10px;
     border-radius: 15px;
     box-shadow: 4px 4px 4px 4px grey;
-
+    
+    
 }
 
 .containerLista {
@@ -243,6 +245,7 @@ footer p {
     margin: 20px;
     display: flex;
     justify-content: center;
+    
 }
 
 .local {
@@ -252,6 +255,7 @@ footer p {
     overflow: hidden;
     margin: 0 0 0 10px;
     height: 200px;
+    box-shadow: 4px 4px 4px 4px grey;
 }
 
 /* Página Contato */

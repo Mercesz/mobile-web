@@ -50,11 +50,13 @@ h2 {
     width: 250px;
     border: 2px solid white;
     border-radius: 15px;
-    margin: 270px auto;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
 }
 
 img{
-    
+    width: 250px;
+    display: flex;
+    margin: 50px auto;
 }
