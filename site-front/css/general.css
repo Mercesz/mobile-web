@@ -165,11 +165,6 @@ header h2 {
     width: 100%;
 }
 
-#newForm{
-    
-}
-
-
 .novidades form input {
     padding-left: 10px;
     max-width: 200px;
@@ -362,4 +357,37 @@ legend {
 
 #msg-email {
     color: #4681d6;
+}
+
+
+#equipe {
+    justify-content: center;
+    display: flex;
+}
+
+.membro img {
+    border-radius: 15px;
+    box-shadow: 4px 4px 4px 4px grey;
+    border: 1px solid rgb(191, 191, 255);
+    height: 150px;
+    width: 250px;
+    margin: 8px 20px 7px 10px;
+}
+
+.nome-titulo {
+    margin-left: 20px;
+}
+
+.logos {
+    justify-content: center;
+    display: flex;
+}
+
+.logos img {
+    border-radius: 250px;
+    box-shadow: 4px 4px 4px 4px grey;
+    border: 1px solid rgb(191, 191, 255);
+    height: 150px;
+    width: 150px;
+    margin: 8px 20px 30px 10px;
 }
