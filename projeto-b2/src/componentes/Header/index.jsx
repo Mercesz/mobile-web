@@ -10,7 +10,7 @@ const Header = (props) => {
     const titleStyle = {
         margin:0,
         fontSize:'24px',
-        color:"#191970"
+        color:"#5050c0ff"
     }
 
     return (
