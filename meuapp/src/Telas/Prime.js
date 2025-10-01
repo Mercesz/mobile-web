@@ -1,4 +1,5 @@
 import { View, StyleSheet, Text } from "react-native";
+import ListaCursos from "../Components/ListaCursos";
 
 export default function Prime() {
     return (
@@ -14,6 +15,8 @@ export default function Prime() {
                 <Text style={estilos.texto}> - Excel Básico</Text>
                 <Text style={estilos.texto}> - Microsoft Power BI</Text>
             </View>
+
+            <ListaCursos/>
         </>
     )
 }
@@ -34,13 +37,14 @@ const estilos = StyleSheet.create({
     },
     cursosContent: {
         paddingTop: 25,
+        paddingBottom: 25,
         width: "100%",
-        height: 200,
         backgroundColor: "#C4E1E6",
     },
     texto: {
         marginLeft: 20,
         marginBottom: 8,
         fontWeight: "bold",
+        width: 350,
     }
 });
