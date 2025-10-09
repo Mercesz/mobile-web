@@ -1,13 +1,14 @@
-import { ScrollView, StyleSheet, Text, View } from 'react-native';
-import Prime from './src/Telas/Prime';
-import ListaAlunos from './src/Components/ListaAlunos';
+import { ScrollView, Text, View } from 'react-native';
 
 export default function App() {
   return (
     <>
-    <ScrollView>
-        <Prime/>
-    </ScrollView>
+      <ScrollView>
+        <Text>Site</Text>
+        <Text>Site</Text>
+        <Text>Site</Text>
+        <Text>Site</Text>
+      </ScrollView>
     </>
   );
 }
