@@ -14,13 +14,15 @@ const estilos = StyleSheet.create({
         width: "100%",
         height: 120,
         backgroundColor: "#d7d7de",
+        borderBottomColor: "#5c5c5fff",
+        borderBottomWidth: 3,
     },
     tituloHeader: {
         width: "100%",
         textAlign: "center",
-        color:"#ff7b00ff",
-        fontWeight:"bold",
-        fontSize:20,
-        paddingTop:45
+        color: "#ff7b00ff",
+        fontWeight: "bold",
+        fontSize: 20,
+        paddingTop: 45
     }
 })
