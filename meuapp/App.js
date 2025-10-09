@@ -5,9 +5,9 @@ import ListaAlunos from './src/Components/ListaAlunos';
 export default function App() {
   return (
     <>
-    <ScrollView>
-        <Prime/>
-    </ScrollView>
+      <ScrollView>
+        <Prime />
+      </ScrollView>
     </>
   );
 }
