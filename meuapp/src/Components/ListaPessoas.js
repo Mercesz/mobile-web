@@ -43,7 +43,7 @@ export default function ListaPessoas() {
 const estilos = StyleSheet.create({
     container: {
         padding: 20,
-        marginTop: 40,
+        marginTop: 20,
     },
     titulo: {
         fontSize: 20,
