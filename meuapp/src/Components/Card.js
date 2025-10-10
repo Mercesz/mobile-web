@@ -1,14 +1,19 @@
-import React from 'react'
+import { useNavigation } from '@react-navigation/native';
 import { Text, View, StyleSheet, Button } from 'react-native'
+import React from 'react'
 
 export default function Card() {
+    const navigation = useNavigation()
+
     return (
         <View style={estilos.container}>
             <Text style={estilos.cardTitle}>Sobre</Text>
             <Text style={estilos.cardContent}>Saiba mais sobre nós</Text>
             <Button
                 title='Ir para Sobre'
-                onPress={() => alert("Botão Pressionado")}
+                onPress={
+                    () => navigation.navigate('Sobre')
+                }
             />
         </View>
     )
