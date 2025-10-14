@@ -36,17 +36,13 @@ export default function FAQ() {
         <TextInput style={estilos.msg} />
       </View>
 
-
-      <TouchableOpacity onPress={handlePress} style={estilos.botao}>
-        <Text style={estilos.botaoTexto}>Enviar</Text>
-      </TouchableOpacity>
-
-      {/* <Button
-        title="Enviar"
-        onPress={handlePress}
-        style={estilos.botao}
-      /> */}
-
+      <View style={estilos.botaoContainer}>
+        <View>
+          <TouchableOpacity onPress={handlePress} style={estilos.botao}>
+            <Text style={estilos.botaoTexto}>Enviar</Text>
+          </TouchableOpacity>
+        </View>
+      </View >
     </>
   )
 }
@@ -73,7 +69,7 @@ const estilos = StyleSheet.create({
   input: {
     borderWidth: 1,
     borderRadius: 15,
-    margin: 8,
+    margin: 10,
   },
   msg: {
     borderWidth: 1,
@@ -81,9 +77,9 @@ const estilos = StyleSheet.create({
     margin: 8,
     height: 150,
   },
-
-
-  // Teste de estilização do botão
+  botaoContainer: {
+    alignItems: 'flex-end'
+  },
   botao: {
     backgroundColor: 'green',
     paddingHorizontal: 20,
