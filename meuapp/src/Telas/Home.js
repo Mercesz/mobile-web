@@ -26,6 +26,15 @@ export default function Home() {
                 }
             />
 
+            <Card
+                title="Lista Contatos"
+                content="Lista de contatos cadastrados"
+                textButton="Listar Contatos"
+                onPress={
+                    () => navigation.navigate('ListaContatos')
+                }
+            />
+
         </View>
     )
 }
