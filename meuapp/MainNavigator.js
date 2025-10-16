@@ -4,6 +4,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import Home from './src/Telas/Home';
 import Sobre from './src/Telas/Sobre'
 import FAQ from './src/Telas/FAQ'
+import ListaContatos from './src/Telas/ListaContatos';
 
 const Stack = createNativeStackNavigator();
 
@@ -14,6 +15,7 @@ export default function MainNavigator() {
                 <Stack.Screen name="Home" component={Home} options={{ headerShown: false }} />
                 <Stack.Screen name="Sobre" component={Sobre} />
                 <Stack.Screen name="FAQ" component={FAQ} />
+                <Stack.Screen name="ListaContatos" component={ListaContatos}/>
             </Stack.Navigator>
         </NavigationContainer>
     )

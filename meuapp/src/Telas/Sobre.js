@@ -73,7 +73,7 @@ export default function Sobre() {
                     </View>
 
 
-                    <Text>Texto Sobre</Text>
+                    <Text style={estilos.textoSobre}>Texto Sobre</Text>
                     <Text>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu cursus nisi. Donec facilisis sit amet nulla sit amet hendrerit. Proin commodo ante eget finibus tincidunt. Vestibulum venenatis iaculis risus, id venenatis eros feugiat id. Etiam scelerisque dapibus metus elementum convallis. Duis non nisi at erat pharetra consectetur vitae quis nisi. Aliquam accumsan, nunc et iaculis efficitur, nibh leo accumsan tellus, in condimentum nisl lacus nec ipsum. Etiam aliquet, nulla non finibus blandit, est tellus consequat urna, auctor interdum eros enim nec nulla. Aliquam vel ante est. Nulla ac imperdiet ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget faucibus ipsum. Vestibulum varius libero sit amet erat egestas egestas. Praesent elementum commodo mi, porttitor euismod ex laoreet sed.</Text>
                 </View>
@@ -130,5 +130,11 @@ const estilos = StyleSheet.create({
     info: {
         marginLeft: 8,
         color: "blue",
+    },
+    textoSobre:{
+        fontWeight: "bold",
+        fontSize: 15,
+        width:"100%",
+        borderWidth:1,
     }
 })
