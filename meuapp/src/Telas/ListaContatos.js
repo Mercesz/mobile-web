@@ -28,16 +28,21 @@ export default function ListaContatos() {
             {contatos.length > 0 ? (
                 contatos.map((contato, index) => (
                     <View key={index} style={estilos.box}>
-                        <Text style={estilos.}>Nome: </Text>
-                        <Text >{contato.nome} ççç</Text>
-                        <Text>Telefone: </Text>
-                        <Text>{contato.telefone}</Text>
+                        <View style={estilos.contentBox}>
+                            <Text style={estilos.dados}>🕴 Nome: </Text>
+                            <Text style={estilos.result}>{contato.nome} </Text>
+                        </View>
+                        <View style={estilos.contentBox}>
+                            <Text style={estilos.dados}>📞 Telefone: </Text>
+                            <Text style={estilos.result}>{contato.telefone}</Text>
+                        </View>
                     </View>
                 ))
             ) : (
                 <Text >Nenhum contato disponível</Text>
-            )}
-        </View>
+            )
+            }
+        </View >
     )
 }
 
@@ -50,8 +55,8 @@ const estilos = StyleSheet.create({
         padding: 20,
         borderRadius: 40,
         shadowColor: "#FF9013",
-        shadowOpacity: 10,
-        elevation: 10,
+        shadowOpacity: 0.9,
+        elevation: 2,
     },
     titulo: {
         fontWeight: "bold",
@@ -59,11 +64,30 @@ const estilos = StyleSheet.create({
         fontSize: 18,
     },
     box: {
-        borderWidth: 1,
-        borderRadius: 15,
+        margin: 10,
+        backgroundColor: "white",
+        borderColor: "white",
+        borderWidth: 2,
         padding: 20,
-        margin: 8,
-        alignItems: "center"
+        borderRadius: 15,
+        shadowColor: "#12539eff",
+        shadowOpacity: 0.9,
+        elevation: 8,
     },
-
+    contentBox: {
+        flexDirection: "row",
+        marginBottom: 10,
+        width: 300,
+    },
+    dados: {
+        fontWeight: "bold",
+        fontSize: 15,
+        marginRight: 15,
+        width: 90
+    },
+    result: {
+        textAlign: "center",
+        width: "65%",
+        textAlign: "center"
+    }
 })
