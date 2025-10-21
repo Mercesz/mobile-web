@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { Alert, Button, StyleSheet, Text, View } from 'react-native'
 import axios from 'axios'
 
 export default function ListaContatos() {
@@ -14,6 +14,21 @@ export default function ListaContatos() {
             })
             .catch((error) => {
                 console.error("Error ao buscar contatos", error)
+            })
+    }
+
+    //  Função para excluir um contato
+    const deleteContato = (id) => {
+        axios
+            .delete(`http://10.0.2.2:3000/contatos/${id}`)
+            .then(() => {
+                //Atualizar lista de contato
+                setContatos(contatos.filter((contato) => contato.id !== id))
+                Alert.alert("Sucesso", "Contato Excluído com sucesso")
+            })
+            .catch((error) => {
+                console.log("Erro ao excluir contato", error)
+                Alert.alert("Erro ao excluir")
             })
     }
 
@@ -36,6 +51,11 @@ export default function ListaContatos() {
                             <Text style={estilos.dados}>📞 Telefone: </Text>
                             <Text style={estilos.result}>{contato.telefone}</Text>
                         </View>
+
+                        <Button
+                            color="red"
+                            title='Excluir'
+                            onPress={() => deleteContato()} />
                     </View>
                 ))
             ) : (

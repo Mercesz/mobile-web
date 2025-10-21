@@ -49,9 +49,11 @@ export default function FAQ() {
             <TouchableOpacity onPress={handlePress} style={estilos.botao}>
               <Text style={estilos.botaoTexto}>Enviar</Text>
             </TouchableOpacity>
+
             <TouchableOpacity onPress={irParaPágina} style={estilos.botaoPergunta}>
               <Text style={estilos.botaoTexto}>Perguntas Frequentes</Text>
             </TouchableOpacity>
+
           </View>
         </View >
       </View>
