@@ -35,6 +35,15 @@ export default function Home() {
                 }
             />
 
+            <Card
+                title="Cadastro"
+                content="Cadastrar Lista"
+                textButton="Cadastro"
+                onPress={
+                    () => navigation.navigate('Cadastro')
+                }
+            />
+
         </View>
     )
 }

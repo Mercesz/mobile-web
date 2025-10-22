@@ -8,7 +8,7 @@ export default function ListaContatos() {
     // Função para buscar contatos do servidor
     const listaContatos = () => {
         axios
-            .get("http://192.168.3.15:3000/contatos")
+            .get("http://10.0.2.2:3000/contatos")
             .then((resposta) => {
                 setContatos(resposta.data)
             })
@@ -20,7 +20,7 @@ export default function ListaContatos() {
     //  Função para excluir um contato
     const deleteContato = (id) => {
         axios
-            .delete(`http://192.168.3.15:3000/contatos/${id}`)
+            .delete(`http://10.0.2.2:3000/contatos/${id}`)
             .then(() => {
                 //Atualizar lista de contato
                 setContatos(contatos.filter((contato) => contato.id !== id))

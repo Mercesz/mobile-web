@@ -9,7 +9,7 @@ export default function ListaPerguntas() {
 
   const listaFaq = () => {
     axios
-      .get("http://192.168.3.15:3000/faq")
+      .get("http://10.0.2.2:3000/faq")
       .then((res) => {
         setFaq(res.data)
       })
