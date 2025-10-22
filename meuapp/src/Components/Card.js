@@ -27,7 +27,7 @@ const estilos = StyleSheet.create({
         fontSize: 18,
         fontWeight: "bold",
         margimBottom: 10,
-        fontFamily: 'Forte',
+        // fontFamily: 'Forte',
 
     },
     cardContent: {

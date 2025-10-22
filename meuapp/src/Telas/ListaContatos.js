@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Alert, Button, StyleSheet, Text, View } from 'react-native'
+import { Alert, Button, ScrollView, StyleSheet, Text, View } from 'react-native'
 import axios from 'axios'
 
 export default function ListaContatos() {
@@ -8,19 +8,19 @@ export default function ListaContatos() {
     // Função para buscar contatos do servidor
     const listaContatos = () => {
         axios
-            .get("http://10.0.2.2:3000/contatos")
+            .get("http://192.168.3.15:3000/contatos")
             .then((resposta) => {
                 setContatos(resposta.data)
             })
             .catch((error) => {
-                console.error("Error ao buscar contatos", error)
+                console.error("Erro ao buscar contatos", error)
             })
     }
 
     //  Função para excluir um contato
     const deleteContato = (id) => {
         axios
-            .delete(`http://10.0.2.2:3000/contatos/${id}`)
+            .delete(`http://192.168.3.15:3000/contatos/${id}`)
             .then(() => {
                 //Atualizar lista de contato
                 setContatos(contatos.filter((contato) => contato.id !== id))
@@ -38,31 +38,35 @@ export default function ListaContatos() {
     }, [])
 
     return (
-        <View style={estilos.container}>
-            <Text style={estilos.titulo}>Lista de Contatos</Text>
-            {contatos.length > 0 ? (
-                contatos.map((contato, index) => (
-                    <View key={index} style={estilos.box}>
-                        <View style={estilos.contentBox}>
-                            <Text style={estilos.dados}>🕴 Nome: </Text>
-                            <Text style={estilos.result}>{contato.nome} </Text>
-                        </View>
-                        <View style={estilos.contentBox}>
-                            <Text style={estilos.dados}>📞 Telefone: </Text>
-                            <Text style={estilos.result}>{contato.telefone}</Text>
-                        </View>
+        <ScrollView>
+            <View style={estilos.container}>
+                <Text style={estilos.titulo}>Lista de Contatos</Text>
+                {contatos.length > 0 ? (
+                    contatos.map((contato, index) => (
+                        <View key={index} style={estilos.box}>
 
-                        <Button
-                            color="red"
-                            title='Excluir'
-                            onPress={() => deleteContato()} />
-                    </View>
-                ))
-            ) : (
-                <Text >Nenhum contato disponível</Text>
-            )
-            }
-        </View >
+                            <View style={estilos.contentBox}>
+                                <Text style={estilos.dados}>🕴 Nome: </Text>
+                                <Text style={estilos.result}>{contato.nome} </Text>
+                            </View>
+
+                            <View style={estilos.contentBox}>
+                                <Text style={estilos.dados}>📞 Tel: </Text>
+                                <Text style={estilos.result}>{contato.telefone}</Text>
+                            </View>
+
+                            <Button
+                                color="red"
+                                title='Excluir'
+                                onPress={() => deleteContato(contato.id)} />
+                        </View>
+                    ))
+                ) : (
+                    <Text >Nenhum contato disponível</Text>
+                )
+                }
+            </View >
+        </ScrollView>
     )
 }
 

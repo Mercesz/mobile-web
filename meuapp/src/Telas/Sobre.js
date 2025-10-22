@@ -8,7 +8,6 @@ import Image5 from "../../assets/img-5.jpg"
 import Image6 from "../../assets/img-6.jpg"
 
 
-
 export default function Sobre() {
     const info = {
         nomeApp: "Fut Popeto",
@@ -20,7 +19,7 @@ export default function Sobre() {
     return (
         <ScrollView>
             <View style={estilos.container}>
-                <Text>Sobre</Text>
+                <Text style={estilos.titulo}>Imagens sobre</Text>
 
                 <View style={estilos.boxImage}>
                     <Image source={Image1}
@@ -74,7 +73,7 @@ export default function Sobre() {
 
 
                     <Text style={estilos.textoSobre}>Texto Sobre</Text>
-                    <Text>
+                    <Text style={estilos.conteudoSobre}>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eu cursus nisi. Donec facilisis sit amet nulla sit amet hendrerit. Proin commodo ante eget finibus tincidunt. Vestibulum venenatis iaculis risus, id venenatis eros feugiat id. Etiam scelerisque dapibus metus elementum convallis. Duis non nisi at erat pharetra consectetur vitae quis nisi. Aliquam accumsan, nunc et iaculis efficitur, nibh leo accumsan tellus, in condimentum nisl lacus nec ipsum. Etiam aliquet, nulla non finibus blandit, est tellus consequat urna, auctor interdum eros enim nec nulla. Aliquam vel ante est. Nulla ac imperdiet ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce eget faucibus ipsum. Vestibulum varius libero sit amet erat egestas egestas. Praesent elementum commodo mi, porttitor euismod ex laoreet sed.</Text>
                 </View>
             </View>
@@ -103,7 +102,8 @@ const estilos = StyleSheet.create({
     boxImage: {
         flexDirection: "row",
         width: "100%",
-        alignItems: "center"
+        display: "flex",
+        justifyContent: "center"
     },
     contentBox: {
         backgroundColor: "white",
@@ -131,10 +131,14 @@ const estilos = StyleSheet.create({
         marginLeft: 8,
         color: "blue",
     },
-    textoSobre:{
+    textoSobre: {
+        padding: 12,
+        textAlign: "center",
         fontWeight: "bold",
         fontSize: 15,
-        width:"100%",
-        borderWidth:1,
+        width: "100%",
+    },
+    conteudoSobre: {
+        textAlign: "center"
     }
 })

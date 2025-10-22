@@ -1,40 +1,56 @@
 {
-    "contatos": [
-        {
-            "id": "1",
-            "nome": "João Silva",
-            "telefone": "7878787878"
-        },
-        {
-            "id": "2",
-            "nome": "Popeto",
-            "telefone": "78978956456"
-        },
-        {
-            "id": "4",
-            "nome": "jksfjklksdfhjk",
-            "telefone": "4564564644654"
-        },{
-            "id":"5",
-            "nome":"nafkjsjdakl",
-            "telefone":"56445648"
-        }
-    ],
-    "faq": [
-        {
-            "id": "1",
-            "pergunta": "O que JSON SERVER?",
-            "resposta": "JSON SERVER é  uma ferramenta que  permite rodar uma API"
-        },
-        {
-            "id": "2",
-            "pergunta": "O que é para fazer popeto?",
-            "resposta": "É para criar um novo cadastro no JSON"
-        },
-        {
-            "id": "3",
-            "pergunta": "Que dia é hoje?",
-            "resposta": "16/10/2025, quinta-feira"
-        }
-    ]
+  "contatos": [
+    {
+      "id": "2",
+      "nome": "Popeto",
+      "telefone": "78978956456"
+    },
+    {
+      "id": "2",
+      "nome": "Popeto",
+      "telefone": "78978956456"
+    },
+    {
+      "id": "4",
+      "nome": "jksfjklksdfhjk",
+      "telefone": "4564564644654"
+    },
+    {
+      "id": "5",
+      "nome": "nafkjsjdakl",
+      "telefone": "56445648"
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "pergunta": "O que JSON SERVER?",
+      "resposta": "JSON SERVER é  uma ferramenta que  permite rodar uma API"
+    },
+    {
+      "id": "2",
+      "pergunta": "O que é para fazer popeto?",
+      "resposta": "É para criar um novo cadastro no JSON"
+    },
+    {
+      "id": "3",
+      "pergunta": "Que dia é hoje?",
+      "resposta": "16/10/2025, quinta-feira"
+    },
+    {
+      "id": "1",
+      "pergunta": "O que JSON SERVER?",
+      "resposta": "JSON SERVER é  uma ferramenta que  permite rodar uma API"
+    },
+    {
+      "id": "2",
+      "pergunta": "O que é para fazer popeto?",
+      "resposta": "É para criar um novo cadastro no JSON"
+    },
+    {
+      "id": "3",
+      "pergunta": "Que dia é hoje?",
+      "resposta": "16/10/2025, quinta-feira"
+    }
+  ]
 }
