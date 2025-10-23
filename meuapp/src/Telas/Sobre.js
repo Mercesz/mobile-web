@@ -52,7 +52,7 @@ export default function Sobre() {
 
                 </View>
 
-                <View style={estilos.line} />
+
                 <View style={estilos.contentBox}>
                     <Text style={estilos.titulo}>Sobre o APP</Text>
 
@@ -91,8 +91,6 @@ const estilos = StyleSheet.create({
         height: 110,
         margin: 10,
         borderRadius: 100,
-        // borderWidth: 2,
-        // borderColor: "orange",
         shadowColor: "#FF9013",
         shadowOpacity: 10,
         elevation: 10,
@@ -107,7 +105,8 @@ const estilos = StyleSheet.create({
         flexDirection: "row",
         width: "100%",
         display: "flex",
-        justifyContent: "center"
+        justifyContent: "center",
+        paddingBottom: 10,
     },
     contentBox: {
         backgroundColor: "white",
@@ -136,7 +135,7 @@ const estilos = StyleSheet.create({
         color: "blue",
     },
     textoSobre: {
-        paddingTop:20,
+        paddingTop: 20,
         textAlign: "center",
         fontWeight: "bold",
         fontSize: 15,

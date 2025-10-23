@@ -21,7 +21,7 @@ export default function Card(props) {
 const estilos = StyleSheet.create({
     container: {
         backgroundColor: "#ffff",
-        borderRadius: 1.41,
+        borderRadius: 14,
         shadowColor: "blue",
         shadowOpacity: 0.2,
         elevation: 2,
@@ -32,8 +32,6 @@ const estilos = StyleSheet.create({
         fontSize: 18,
         fontWeight: "bold",
         margimBottom: 10,
-        // fontFamily: 'Forte',
-
     },
     cardContent: {
         fontSize: 14,
@@ -56,5 +54,4 @@ const estilos = StyleSheet.create({
         fontSize: 15,
         fontWeight: "bold"
     }
-
 });

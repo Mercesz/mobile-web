@@ -5,6 +5,7 @@ export default function Header() {
     return (
         <View style={estilos.topo}>
             <Text style={estilos.tituloHeader}>Fut Popeto</Text>
+            <Text style={estilos.icon}>⚽</Text>
         </View>
     )
 }
@@ -22,6 +23,7 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         color: "#ff7b00ff",
         fontWeight: "bold",
+        fontStyle: "italic",
         fontSize: 20,
         paddingTop: 45
     }

@@ -87,9 +87,6 @@ const estilos = StyleSheet.create({
   img: {
     height: 150,
     width: 150,
-    borderRadius: 100,
-    shadowColor: "red",
-    elevation: 20,
   },
 
   pergunta: {
