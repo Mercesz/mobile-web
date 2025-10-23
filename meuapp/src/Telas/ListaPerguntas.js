@@ -89,7 +89,7 @@ const estilos = StyleSheet.create({
     width: 150,
     borderRadius: 100,
     shadowColor: "red",
-    elevation: 0.9,
+    elevation: 20,
   },
 
   pergunta: {

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Alert, Button, Text, TextInput, View, StyleSheet } from 'react-native'
+import { Alert, Button, Text, TextInput, View, StyleSheet, TouchableOpacity } from 'react-native'
 import axios from 'axios'
 import { useNavigation } from '@react-navigation/native'
 
@@ -48,7 +48,16 @@ export default function Cadastro() {
                 onChangeText={setTelefone}
             />
 
-            <Button title='Cadastrar' onPress={enviarContato} />
+            {/* <Button
+                color="#B8E9C0"
+                title='Cadastrar'
+                onPress={enviarContato} /> */}
+
+            <View style={estilos.containerButton}>
+                <TouchableOpacity onPress={enviarContato} style={estilos.button}>
+                    <Text style={estilos.titleButton}>Cadastrar</Text>
+                </TouchableOpacity>
+            </View>
         </View>
     )
 }
@@ -62,7 +71,7 @@ const estilos = StyleSheet.create({
         borderWidth: 2,
         padding: 20,
         borderRadius: 40,
-        shadowColor: "#FF9013",
+        shadowColor: "blue",
         shadowOpacity: 0.9,
         elevation: 2,
         height: 300,
@@ -79,5 +88,23 @@ const estilos = StyleSheet.create({
         marginBottom: 20,
         borderRadius: 5,
         backgroundColor: "#FFF",
+    },
+    containerButton: {
+        paddingTop: 10,
+        alignItems: "center"
+    },
+    button: {
+        backgroundColor: "#A4B465",
+        padding: 10,
+        borderRadius: 15,
+        alignItems: "center",
+        width: 150,
+        elevation: 2,
+        borderColor: "#F8F3D9"
+    },
+    titleButton: {
+        color: "white",
+        fontSize: 16,
+        fontWeight: "bold"
     }
 })
