@@ -1,11 +1,11 @@
 import React from 'react'
-import { Text, View, StyleSheet } from "react-native"
+import { Text, View, StyleSheet, Image } from "react-native"
+import bolaFutebol from "../../assets/bolaDeFutebol.jpg"
 
 export default function Header() {
     return (
         <View style={estilos.topo}>
-            <Text style={estilos.tituloHeader}>Fut Popeto</Text>
-            <Text style={estilos.icon}>⚽</Text>
+            <Text style={estilos.tituloHeader}> ⚽  Fut Popeto</Text>
         </View>
     )
 }
@@ -23,8 +23,11 @@ const estilos = StyleSheet.create({
         textAlign: "center",
         color: "#ff7b00ff",
         fontWeight: "bold",
-        fontStyle: "italic",
         fontSize: 20,
         paddingTop: 45
+    },
+    icon: {
+        height: 100,
+        width: 100,
     }
 })

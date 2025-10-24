@@ -48,11 +48,6 @@ export default function Cadastro() {
                 onChangeText={setTelefone}
             />
 
-            {/* <Button
-                color="#B8E9C0"
-                title='Cadastrar'
-                onPress={enviarContato} /> */}
-
             <View style={estilos.containerButton}>
                 <TouchableOpacity onPress={enviarContato} style={estilos.button}>
                     <Text style={estilos.titleButton}>Cadastrar</Text>

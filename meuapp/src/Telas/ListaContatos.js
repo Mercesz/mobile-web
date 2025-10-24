@@ -46,7 +46,7 @@ export default function ListaContatos() {
                         <View key={index} style={estilos.box}>
 
 
-                            <View></View>
+                            
                             <View style={estilos.contentBox}>
                                 <Text style={estilos.dados}>🕴 Nome: </Text>
                                 <Text style={estilos.result}>{contato.nome} </Text>
